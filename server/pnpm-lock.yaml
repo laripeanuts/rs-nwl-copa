@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@faker-js/faker': ^7.6.0
   '@fastify/cors': ^8.1.1
   '@mermaid-js/mermaid-cli': ^9.1.7
   '@prisma/client': ^4.5.0
@@ -16,6 +17,7 @@ dependencies:
   fastify: 4.9.2
 
 devDependencies:
+  '@faker-js/faker': 7.6.0
   '@mermaid-js/mermaid-cli': 9.1.7
   prisma: 4.5.0
   prisma-erd-generator: 1.2.2_u5kgfm7va5nxgxj5sebpt5i7rm
@@ -62,6 +64,11 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@faker-js/faker/7.6.0:
+    resolution: {integrity: sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    dev: true
 
   /@fastify/ajv-compiler/3.4.0:
     resolution: {integrity: sha512-69JnK7Cot+ktn7LD5TikP3b7psBPX55tYpQa8WSumt8r117PCa2zwHnImfBtRWYExreJlI48hr0WZaVrTBGj7w==}

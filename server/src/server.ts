@@ -1,5 +1,5 @@
-import { PrismaClient } from "@prisma/client";
 import cors from "@fastify/cors";
+import { PrismaClient } from "@prisma/client";
 import Fastify from "fastify";
 
 const prisma = new PrismaClient({
@@ -20,7 +20,7 @@ async function bootstrap() {
     return { count};
   });
 
-  await fastify.listen({ port: 3333, host: "0.0.0.0" });
+  await fastify.listen({ port: 3333});
 }
 
 bootstrap();

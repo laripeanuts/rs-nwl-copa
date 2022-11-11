@@ -9,7 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@mermaid-js/mermaid-cli": "^9.1.7",
     "prisma": "^4.5.0",
     "prisma-erd-generator": "^1.2.2",

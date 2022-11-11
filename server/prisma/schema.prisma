@@ -47,8 +47,8 @@ model User {
   email     String   @unique
   avatarUrl String?
 
-  participatingAt Partcipant[]
-  ownPools        Pool[]
+  partcipatingAt Partcipant[]
+  ownPools       Pool[]
 }
 
 model Game {
@@ -68,6 +68,6 @@ model Guess {
   gameId          String
   partcipantId    String
 
-  game        Game       @relation(fields: [gameId], references: [id])
-  participant Partcipant @relation(fields: [partcipantId], references: [id])
+  game       Game       @relation(fields: [gameId], references: [id])
+  partcipant Partcipant @relation(fields: [partcipantId], references: [id])
 }
