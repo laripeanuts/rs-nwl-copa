@@ -1,11 +1,12 @@
 import { Center, Text } from "native-base";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 import Logo from "../../assets/logo.svg";
 import { Button } from "../../components/Button";
-import { useAuthContext } from "../../hooks/useAuthContext";
 
 export const SignIn = () => {
   const { signIn } = useAuthContext();
+
   return (
     <Center flex={1} bg="gray.900" padding={7}>
       <Logo width={212} height={40} />
