@@ -7,6 +7,27 @@
 
 </div>
 
+## 💡 Project
+
+It's a betting app for football matches on the championship of the world cup.
+[Files](https://efficient-sloth-d85.notion.site/NLW-10-Copa-235da64b014048b4a4c25229b67ecb12) and [Figma](<https://www.figma.com/file/ZvzOjOvbCinBTrEo9jN6ND/Bol%C3%A3o-da-Copa-(Community)?t=G7vVwdfntvLlobe4-0>).
+
+## 🎯 Goals
+
+Develop a project that applied the fundamental concepts of React, React Native, NodeJS and fulfilled the following requirements:
+
+- [x] Develop with TypeScript
+- [x] Integrate projects: Server, Mobile and Web
+- [x] Follow the design [Figma](<https://www.figma.com/proto/FWRSplMx3BaVsQCHNWR9rH/NLW-eSports-(Community)?node-id=0%3A1>)
+
+## 🥳 Application
+
+### Web
+
+<p align="left">
+  <img src="./.github/preview-web.png" alt="preview web app" width="60%">
+</p>
+
 ## 🦸‍♂️ Support techs
 
 ### Server
@@ -25,6 +46,21 @@
 ### Mobile
 
 - [Expo](https://expo.io/) (React Native framework)
+
+## 💻 Made with
+
+[![JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![REACT](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://pt-br.reactjs.org/)
+[![NODEJS](https://img.shields.io/badge/NodeJS-44873D?style=for-the-badge&logo=nodejs&logoColor=white)](https://pt-br.reactjs.org/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+
+## 🛠️ Tools
+
+[![IDE](https://img.shields.io/badge/Visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
+[![INSOMNIA](https://img.shields.io/badge/Insomnia-4E56BF?style=for-the-badge&logo=insomnia&logoColor=white)](https://pop.system76.com/)
+[![LINUX](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)](https://pop.system76.com/)
 
 ## 🚀 How to run
 
