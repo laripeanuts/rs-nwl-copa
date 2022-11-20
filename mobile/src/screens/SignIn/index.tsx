@@ -8,7 +8,7 @@ export const SignIn = () => {
   const { signIn } = useAuthContext();
 
   return (
-    <Center flex={1} bg="gray.900" padding={7}>
+    <Center flex={1} bg="gray.900" padding={7} w="full">
       <Logo width={212} height={40} />
       <Button
         icon="google"

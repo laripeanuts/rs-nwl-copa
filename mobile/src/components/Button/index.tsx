@@ -4,7 +4,7 @@ import { IButtonProps } from "native-base/lib/typescript/components/primitives/B
 
 interface ButtonProps extends IButtonProps {
   title: string;
-  icon: string;
+  icon?: string;
   type?: "primary" | "secondary";
 }
 
@@ -16,13 +16,22 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <ButtonNativeBase
-      width={80}
+      width="full"
       height={14}
       borderRadius={8}
       rounded="sm"
       padding={0}
       margin={0}
-      leftIcon={<Icon as={Fontisto} name={icon} size="md" color="white" />}
+      leftIcon={
+        icon ? (
+          <Icon
+            as={Fontisto}
+            name={icon}
+            size="md"
+            color={type === "primary" ? "black" : "white"}
+          />
+        ) : null
+      }
       bg={type === "primary" ? "yellow.500" : "red.500"}
       _pressed={{ bg: type === "primary" ? "yellow.600" : "red.600" }}
       _loading={{ _spinner: { color: "white" } }}
