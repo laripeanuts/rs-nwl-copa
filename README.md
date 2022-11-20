@@ -19,6 +19,7 @@ Develop a project that applied the fundamental concepts of React, React Native, 
 - [x] Develop with TypeScript
 - [x] Integrate projects: Server, Mobile and Web
 - [x] Follow the design [Figma](<https://www.figma.com/proto/FWRSplMx3BaVsQCHNWR9rH/NLW-eSports-(Community)?node-id=0%3A1>)
+- [x] Authentication with OAuth2 Google and JWT
 
 ## 🥳 Application
 
@@ -109,6 +110,15 @@ Inicie localmente
 ```
 
 ### Mobile
+
+Required to generate a AUTH2 credentials in [Google Console](https://console.cloud.google.com/apis/credentials) for the Expo application. Read more about in [docs](https://docs.expo.dev/guides/authentication/#google).
+
+warning Do not commit secret environments on .env files. It's recommended to save these variables in .env.local or .env.development.local files.
+
+```env
+API_URL=YOUR_API_URL
+GOOGLE_CLIENT_ID=YOUR_API_KEY
+```
 
 ```bash
   cd /mobile
