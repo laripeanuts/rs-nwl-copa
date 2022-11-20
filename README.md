@@ -68,13 +68,13 @@ Develop a project that applied the fundamental concepts of React, React Native, 
 
 ## 🚀 How to run
 
-Clone o projeto
+Clone the project
 
 ```bash
   git clone https://github.com/laripeanuts/rs-nwl-copa.git
 ```
 
-Vá para a raiz do diretório
+Go to the project directory
 
 ### Server
 
@@ -82,13 +82,13 @@ Vá para a raiz do diretório
   cd /server
 ```
 
-Instale as dependências
+Install dependencies
 
 ```bash
   pnpm install
 ```
 
-Inicie o servidor local
+Start the server
 
 ```bash
   pnpm start
@@ -100,13 +100,13 @@ Inicie o servidor local
   cd /web
 ```
 
-Instale as dependências
+Install dependencies
 
 ```bash
   pnpm install
 ```
 
-Inicie localmente
+Start the project locally
 
 ```bash
   pnpm run dev
@@ -116,7 +116,7 @@ Inicie localmente
 
 Required to generate a AUTH2 credentials in [Google Console](https://console.cloud.google.com/apis/credentials) for the Expo application. Read more about in [docs](https://docs.expo.dev/guides/authentication/#google).
 
-warning Do not commit secret environments on .env files. It's recommended to save these variables in .env.local or .env.development.local files.
+Only has env variables for study proposes. In production, use a .env file with safety.
 
 ```env
 API_URL=YOUR_API_URL
@@ -127,16 +127,16 @@ GOOGLE_CLIENT_ID=YOUR_API_KEY
   cd /mobile
 ```
 
-Instale as dependências
+Install dependencies
 
 ```bash
-  yarn install
+  npm install
 ```
 
-Inicie localmente
+Starts the Expo server
 
 ```bash
   expo start
 ```
 
-<p align="center">Copyright © 2022 ☕<a href="https://github.com/laripeanuts">laripeanuts</a></p> -->
+<p align="center">Copyright © ☕<a href="https://github.com/laripeanuts">laripeanuts</a></p>
