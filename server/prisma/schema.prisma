@@ -5,9 +5,10 @@ generator client {
   provider = "prisma-client-js"
 }
 
-generator erd {
-  provider = "prisma-erd-generator"
-}
+// It is not running on WSL
+// generator erd {
+//     provider = "prisma-erd-generator"
+// }
 
 datasource db {
   provider = "sqlite"
@@ -15,22 +16,21 @@ datasource db {
 }
 
 model Pool {
-  id        String   @id @default(uuid())
-  CreatedAt DateTime @default(now())
-  name      String
+  id        String   @id @default(cuid())
+  title     String
   code      String   @unique
+  CreatedAt DateTime @default(now())
   ownerId   String?
 
-  partcipants Partcipant[]
+  participants Participant[]
 
   owner User? @relation(fields: [ownerId], references: [id])
 }
 
-model Partcipant {
-  id        String   @id @default(uuid())
-  CreatedAt DateTime @default(now())
-  userId    String
-  poolId    String
+model Participant {
+  id     String @id @default(cuid())
+  userId String
+  poolId String
 
   guesses Guess[]
 
@@ -41,33 +41,46 @@ model Partcipant {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  CreatedAt DateTime @default(now())
+  id        String   @id @default(cuid())
   name      String
   email     String   @unique
+  googleId  String?  @unique
   avatarUrl String?
+  CreatedAt DateTime @default(now())
 
-  partcipatingAt Partcipant[]
-  ownPools       Pool[]
+  participatingAt Participant[]
+  ownPool         Pool[]
 }
 
 model Game {
-  id                    String   @id @default(uuid())
+  id                    String   @id @default(cuid())
   date                  DateTime
   firstTeamCountryCode  String
   secondTeamCountryCode String
 
   guesses Guess[]
+  result  GameResult?
+}
+
+model GameResult {
+  id              String @id @default(cuid())
+  gameId          String @unique
+  firstTeamScore  Int
+  secondTeamScore Int
+
+  game Game @relation(fields: [gameId], references: [id])
 }
 
 model Guess {
-  id              String   @id @default(uuid())
-  CreatedAt       DateTime @default(now())
+  id              String   @id @default(cuid())
   firstTeamScore  Int
   secondTeamScore Int
+  CreatedAt       DateTime @default(now())
   gameId          String
-  partcipantId    String
+  participantId   String
 
-  game       Game       @relation(fields: [gameId], references: [id])
-  partcipant Partcipant @relation(fields: [partcipantId], references: [id])
+  game        Game        @relation(fields: [gameId], references: [id])
+  participant Participant @relation(fields: [participantId], references: [id])
+
+  @@unique([participantId, gameId])
 }
