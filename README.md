@@ -37,16 +37,19 @@ Develop a project that applied the fundamental concepts of React, React Native, 
 - [Fastify](https://www.fastify.io/) (Web framework)
 - [Cors](https://www.npmjs.com/package/cors) (Cross-origin resource sharing)
 - [SQLite](https://www.sqlite.org/index.html) (Database)
+- [Google OAuth2](https://developers.google.com/identity/protocols/oauth2) (Authentication)
+- [JWT](https://jwt.io/) (Authentication)
 
 ### Web
 
 - [NextJS](https://nextjs.org/) (React framework)
-- [Phosphor](https://phosphoricons.com/) (Icons)
-- [Radix UI](https://www.radix-ui.com/) (UI components)
+- [Tailwind](https://www.tailwind.com/) (CSS framework)
 
 ### Mobile
 
 - [Expo](https://expo.io/) (React Native framework)
+- [Native Base](https://nativebase.io/)
+- [Phosphor](https://phosphoricons.com/) (Icons)
 
 ## 💻 Made with
 
