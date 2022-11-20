@@ -25,6 +25,7 @@ export default function Home({ poolCount, guessCount, userCount }: HomeProps) {
       const response = await apiClient.post("/pools", { name: poolName });
 
       const { code } = await response.data;
+      setCodeMsg(code);
       console.log(code);
       await navigator.clipboard.writeText(code);
 
@@ -80,9 +81,8 @@ export default function Home({ poolCount, guessCount, userCount }: HomeProps) {
         </p>
 
         {codeMsg ? (
-          <div className="mt-10 flex items-center gap-2">
-            <Image src={appIconCheck} alt="Ícone de check" />
-            <strong className="text-gray-100 text-xl">
+          <div className="mt-2 flex items-center gap-2">
+            <strong className="text-gray-100 text-sm">
               Código do seu bolão: {codeMsg}
             </strong>
           </div>
