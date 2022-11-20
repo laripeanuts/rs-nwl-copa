@@ -49,7 +49,10 @@ Develop a project that applied the fundamental concepts of React, React Native, 
 
 - [Expo](https://expo.io/) (React Native framework)
 - [Native Base](https://nativebase.io/)
+- [React Navigation](https://reactnavigation.org/)
 - [Phosphor](https://phosphoricons.com/) (Icons)
+- [Axios](https://axios-http.com/) (HTTP client)
+- [DayJS](https://day.js.org/) (Date library)
 
 ## 💻 Made with
 

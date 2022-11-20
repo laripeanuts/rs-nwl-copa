@@ -6,12 +6,14 @@ interface ButtonProps extends IButtonProps {
   title: string;
   icon?: string;
   type?: "primary" | "secondary";
+  uppercase?: boolean;
 }
 
 export const Button = ({
   title,
   icon,
   type = "primary",
+  uppercase = false,
   ...rest
 }: ButtonProps) => {
   return (
@@ -43,7 +45,7 @@ export const Button = ({
         fontFamily="heading"
         textTransform="uppercase"
       >
-        {title}
+        {!uppercase ? title : title.toUpperCase()}
       </Text>
     </ButtonNativeBase>
   );
