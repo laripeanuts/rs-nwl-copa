@@ -68,7 +68,7 @@ Develop a project that applied the fundamental concepts of React, React Native, 
 Clone o projeto
 
 ```bash
-  git clone https://github.com/laripeanuts/rocketseat-bootcamp-nwl-esports.git
+  git clone https://github.com/laripeanuts/rs-nwl-copa.git
 ```
 
 Vá para a raiz do diretório
