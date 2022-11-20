@@ -23,10 +23,25 @@ Develop a project that applied the fundamental concepts of React, React Native, 
 
 ## 🥳 Application
 
+### Server
+
+<p align="left">
+  <img src="./.github/ERD.svg" alt="preview web app" width="80%">
+</p>
+
 ### Web
 
 <p align="left">
   <img src="./.github/preview-web.png" alt="preview web app" width="60%">
+</p>
+
+### Mobile
+
+<p align="left">
+  <img src="./.github/mobile-1.png" alt="preview web app" widht="20%">
+  <img src="./.github/mobile-2.png" alt="preview web app" widht="20%">
+  <img src="./.github/mobile-3.png" alt="preview web app" widht="20%">
+  <img src="./.github/mobile-4.png" alt="preview web app" widht="20%">
 </p>
 
 ## 🦸‍♂️ Support techs
